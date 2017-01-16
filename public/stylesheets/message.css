@@ -1,0 +1,109 @@
+body {
+  font: normal 20px "Courier New", Courier, monospace;
+  color: #3f3f3f;
+  background: #ffffff;
+  text-align: center
+}
+
+table.center {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+td {
+  max-width: 300px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+textarea {
+  font: normal 20px "Courier New", Courier, monospace;
+  width: 500px;
+  height: 120px;
+  color: #3f3f3f;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input {
+  font: normal 20px "Courier New", Courier, monospace;
+  width: 500px;
+  color: #3f3f3f;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  width: 350px;
+  padding: 12px 45px;
+  margin: 0 40px 0 0;
+  font: normal 24px "Courier New", Courier, monospace;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  background: #228b22;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2f4f4f;
+  cursor: pointer;
+}
+
+form button[type="submit"] {
+  padding: 12px 45px;
+  margin: 0 40px 0 0;
+  font: normal 24px "Courier New", Courier, monospace;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  background: #dd5f4f;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #d13b28;
+  cursor: pointer;
+}
+
+.flash {
+  max-width: 560px;
+  padding: 10px 20px;
+  margin: 20px auto 1.5em auto;
+  color: #3399cc;
+  background: #CBE5F2;
+}
+
+.flash p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.flash.error {
+  color: #ff6633;
+  background: #FFCFBF;
+}
+
+.flash.success {
+  color: #33cc99;
+  background: #CBF2E5;
+}

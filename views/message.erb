@@ -1,0 +1,17 @@
+<h1>Edit this message</h1>
+<form action="/message/<%= params[:id] %>/edit" method="post">
+  <p>Message:</p>
+  <textarea name="message"/><%= @message[:message] %></textarea>
+  <p>Author:</p>
+  <p><input name="author" type="text" value="<%= @message[:author] %>"/></p>
+  <br>
+  <input type="submit" value="Edit message">
+</form>
+<br>
+<br>
+<form action="/message/<%= params[:id] %>/destroy" method="post">
+  <button type="submit" class="delete">Delete message</button>
+</form>
+<br>
+<br>
+<a href='/messages'>View all messages</a>

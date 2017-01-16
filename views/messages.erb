@@ -1,0 +1,30 @@
+<h1>Message board</h1>
+<br>
+<table class="center">
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th>Author</th>
+      <th>Date of creation</th>
+    </tr>
+  </thead>
+  <% @messages.each_with_index do |message, index| %>
+    <tbody>
+      <tr>
+        <td><a href="/message/<%= index %>/edit"><%= truncate(message[:message]) %></a></td>
+        <td><%= truncate(message[:author]) %></td>
+        <td><%= get_day(message[:time]) %></td>
+      </tr>
+    </tbody>
+  <% end %>
+</table>
+<br>
+<br>
+<br>
+<br>
+
+<% if @messages == [] %>
+  <a href='/new'>The board is empty, please create the first message</a>
+<% else %>
+  <a href='/new'>Back to create a new message</a>
+<% end %>
